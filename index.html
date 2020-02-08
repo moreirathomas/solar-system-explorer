@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solar System | Year 12020</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="sources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="sources/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- canvases -->
+    <canvas class="smallStars"></canvas>
+    <canvas class="mediumStars"></canvas>
+    <canvas class="largeStars"></canvas>
+    <!-- the planets -->
+    <div class="the-system">
+        <!-- written from outer to inner so that elements smaller are on top off larger ones in the dom : it is possible to click en hover them without making use of z-index -->
+        <div id="pluto" class="orbit">
+            <div class="planet">
+                <div class="ring-mask"></div>
+            </div>
+        </div>
+        <div id="gazorpazorp" class="orbit">
+            <div class="planet"></div>
+        </div>
+        <div id="earth" class="orbit">
+            <div class="planet"></div>
+        </div>
+        <div id="mars" class="orbit">
+            <div class="planet"></div>
+        </div>
+        <div id="sun" class="orbit"></div>
+    </div>
+            <!-- texts -->
+    <div class="credits">
+        <p>Hi! I'm Thomas and I am just getting started in web dev.</p>
+        <p>Here is my first creative project.</p> 
+        <p>It is all pure HTML, CSS and vanilla JavaScript.</p>
+        <p>I really enjoyed making it, I hope you do too discovering it!</p>
+    </div>
+    <div class="text-boxes">
+        <div class="system-info">
+            <p>Spaceship FTL</p>
+            <p>> Engines online</p>
+            <p>Current Date</p>
+            <p>> 12020 AD</p>
+            <p>Location</p>
+            <p>> Solar System</p>
+            <p>> <span>_</span></p>
+        </div>
+        <div class="planets-info">
+            <div class="pluto info">
+                <p>Pluto</p>
+                <p>> Atmosphere not suited for organic life</p> 
+                <p>> No life form detected</p>
+                <p>> Large amount of mineral ressources detected</p>
+                <p>> <span>_</span></p>
+            </div>
+            <div class="gazorpazorp info">
+                <p> Gazorpazorp </p>
+                <p>> Atmosphere suited for organic life</p></p>>
+                <p>> Primitive life form detected</p>
+                <p>> Do not engage life forms directly</p>
+                <p>> <span>_</span></p>
+            </div>
+            <div class="earth info">
+                <p>Earth</p>
+                <p>> Atmosphere not suited for organic life</p>
+                <p>> Artificial life detected</p>
+                <p>> <span>_</span></p>
+            </div>
+            <div class="mars info">
+                <p>Mars</p>
+                <p>> Atmosphere not suited for organic life</p>
+                <p>> Human life detected in shelters</p>
+                <p>> Warning : dioxygen ressources of the planet reaching alarming level</p>
+                <p>> <span>_</span></p>
+            </div>
+            <div class="sun info">
+                <p>Sun</p>
+                <p>> Warning : star approching end fusion cycle</p>
+                <p>> High instability</p>
+                <p>> Do not approch</p>
+                <p>> <span>_</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- color selectors -->
+    <div class="color-select">
+        <!-- choose your colors -->
+        <span class="swap to-red">1</span>
+        <span class="swap to-yellow">2</span>
+        <span class="swap to-blue">3</span>
+    </div>
+    <!-- the custom cursor -->
+    <div class="custom-cursor"></div>
+    <!-- the rocket -->
+    <div class="rocket">
+        <div class="rocket-body">
+          <div class="body red"></div>
+          <div class="fin fin-middle red"></div>
+          <div class="fin fin-left red"></div>
+          <div class="fin fin-right red"></div>
+          <div class="window red"></div>
+        </div>
+        <div class="exhaust-flame"></div>
+    </div>
+    <!-- the script -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
